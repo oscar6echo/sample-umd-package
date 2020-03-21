@@ -3,15 +3,10 @@
 
 
 ```bash
+# init
 yarn init
 
-# build
-yarn add -D \
-    webpack \
-    webpack-cli \
-    webpack-merge
-
-# setup
+# to setup vscode env
 yarn add -D \
     @babel/cli \
     @babel/core \
@@ -25,6 +20,19 @@ yarn add -D \
     eslint-plugin-import \
     eslint-plugin-prettier \
     prettier
+
+# to build package
+yarn add -D \
+    webpack \
+    webpack-cli \
+    webpack-merge
+
+yarn build-prd
+yarn build-dev
+
+# to publish
+npm login
+npm publish --access public
 ```
 
  

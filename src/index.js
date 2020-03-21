@@ -2,7 +2,6 @@ import reduce from 'lodash/reduce';
 import arrRef from './ref.json';
 
 const numToWord = (num) => {
-  console.log('begin func numToWord');
   return reduce(
     arrRef,
     (acc, v) => {
