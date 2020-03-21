@@ -1,0 +1,26 @@
+<html>
+  <head>
+    <script src="../dist/webpack-numbers.js"></script>
+  </head>
+
+  <body>
+    open console
+  </body>
+
+  <script>
+    console.log('start');
+
+    const m = webpackNumbers;
+
+    console.log(m.numToWord(2));
+    console.log(m.numToWord(3));
+    console.log(m.numToWord(4));
+    console.log(m.numToWord(10));
+
+    console.log(m.wordToNum('two'));
+    console.log(m.wordToNum('Two'));
+    console.log(m.wordToNum('Twos'));
+
+    console.log('done');
+  </script>
+</html>

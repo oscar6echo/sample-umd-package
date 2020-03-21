@@ -1,0 +1,35 @@
+{
+  "name": "@oscar6echo/sample-umd-package",
+  "version": "1.0.0",
+  "description": "A minimal package for node and browser built wih webpack",
+  "homepage": "https://github.com/oscar6echo/sample-umd-package",
+  "author": "oscar6echo",
+  "license": "MIT",
+  "private": false,
+  "main": "dist/webpack-numbers.js",
+  "module": "src/index.js",
+  "scripts": {
+    "build-dev": "webpack --config webpack.dev.js",
+    "build-prd": "webpack --config webpack.prod.js"
+  },
+  "dependencies": {
+    "lodash": "^4.17.15",
+    "webpack-cli": "^3.3.11"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.9.0",
+    "@babel/node": "^7.8.7",
+    "@babel/preset-env": "^7.9.0",
+    "@babel/runtime": "^7.9.2",
+    "babel-loader": "^8.1.0",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.1.0",
+    "eslint-config-prettier": "^6.10.0",
+    "eslint-plugin-import": "^2.20.1",
+    "eslint-plugin-prettier": "^3.1.2",
+    "prettier": "^2.0.0",
+    "webpack": "^4.42.0",
+    "webpack-merge": "^4.2.2"
+  }
+}
