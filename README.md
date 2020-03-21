@@ -5,13 +5,13 @@
 ```bash
 yarn init
 
-# to build
+# build
 yarn add -D \
     webpack \
     webpack-cli \
     webpack-merge
 
-# to edit
+# setup
 yarn add -D \
     @babel/cli \
     @babel/core \
