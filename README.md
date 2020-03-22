@@ -27,6 +27,10 @@ yarn add -D \
     webpack-cli \
     webpack-merge
 
+# package
+yarn add lodash.reduce
+
+# build
 yarn build-prd
 yarn build-dev
 
