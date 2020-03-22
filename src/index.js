@@ -1,4 +1,15 @@
-import reduce from 'lodash/reduce';
+// see https://stackoverflow.com/questions/43479464/how-to-import-a-single-lodash-function
+
+// solution 1
+// import reduce from 'lodash/reduce';
+
+// solution 2
+// import { reduce } from 'lodash-es';
+
+// solution 3
+// yarn add lodash.reduce
+import reduce from 'lodash.reduce';
+
 import arrRef from './ref.json';
 
 const numToWord = (num) => {
