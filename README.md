@@ -64,3 +64,7 @@ yarn test-browser
 ```
 
 
+## Debug
+
+Use [VSCode debugger](https://code.visualstudio.com/docs/editor/debugging).  
+Cf. config [launch.json](.vscode/launch.json)
