@@ -33,6 +33,27 @@ yarn build-dev
 # to publish
 npm login
 npm publish --access public
+
+# to unpulish
+# only in 24h after publish
+# cannot overwrite same name/version later
+npm unpublish @oscar6echo/sample-umd-package -f
 ```
 
- 
+## Test
+
+### Node
+
+```bash
+yarn test-node
+```
+
+### Browser
+
+```bash
+yarn test-browser
+# visit localhost:5000/test/
+# open console
+```
+
+

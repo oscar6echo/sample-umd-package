@@ -11,7 +11,9 @@
   "sideEffects": false,
   "scripts": {
     "build-dev": "webpack --config webpack.dev.js",
-    "build-prd": "webpack --config webpack.prod.js"
+    "build-prd": "webpack --config webpack.prod.js",
+    "test-node": "node test/main.js",
+    "test-browser": "npx serve ."
   },
   "dependencies": {
     "lodash.reduce": "^4.6.0"
