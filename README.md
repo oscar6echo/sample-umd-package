@@ -13,7 +13,6 @@ yarn add -D \
     @babel/node \
     @babel/preset-env \
     @babel/runtime \
-    @babel/loader \
     eslint \
     eslint-config-airbnb-base \
     eslint-config-prettier \
@@ -24,6 +23,7 @@ yarn add -D \
 # to build package
 yarn add -D \
     webpack \
+    babel-loader \
     webpack-cli \
     webpack-merge
 
