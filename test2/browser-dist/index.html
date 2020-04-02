@@ -1,0 +1,44 @@
+<html>
+  <head>
+    <script src="../../dist2B/my-lib.js"></script>
+  </head>
+
+  <body>
+    open console
+  </body>
+
+  <script>
+    console.log('start');
+
+    console.log(MyLib);
+    const m = MyLib.default
+
+    let x;
+    let y;
+    let f;
+
+    x = 2;
+    f = m.funcA.func1;
+    console.log(x, f(x));
+
+    x = 2;
+    f = m.funcA.func2;
+    console.log(x, f(x));
+
+    x = 'azerty';
+    f = m.btoaBrowser;
+    console.log(x, f(x));
+
+    x = 2;
+    y = 10;
+    f = m.funcB.func1;
+    console.log(x, f(x, y));
+
+    x = 2;
+    y = 10;
+    f = m.funcB.func2;
+    console.log(x, f(x, y));
+
+    console.log('\ndone');
+  </script>
+</html>

@@ -1,0 +1,46 @@
+<html>
+  <head>
+    <script src="../../lib2/my-lib.funcA.js"></script>
+    <!-- <script src="../../lib2/my-lib.funcB.js"></script> -->
+    <script src="../../lib2/my-lib.btoaBrowser.js"></script>
+  </head>
+
+  <body>
+    open console
+  </body>
+
+  <script>
+    console.log('start');
+    console.log(MyLib);
+
+    const m = MyLib
+
+    let x;
+    let y;
+    let f;
+
+    x = 2;
+    f = m.funcA.default.func1;
+    console.log(x, f(x));
+
+    x = 2;
+    f = m.funcA.default.func2;
+    console.log(x, f(x));
+
+    x = 'azerty';
+    f = m.btoaBrowser.default;
+    console.log(x, f(x));
+
+    // x = 2;
+    // y = 10;
+    // f = m.funcB.default.func1;
+    // console.log(x, f(x, y));
+
+    // x = 2;
+    // y = 10;
+    // f = m.funcB.default.func2;
+    // console.log(x, f(x, y));
+
+    console.log('\ndone');
+  </script>
+</html>

@@ -1,6 +1,6 @@
+# Bootstrap
 
-## Bootstrap
-
+## Install
 
 ```bash
 # init
@@ -46,7 +46,6 @@ npm unpublish @oscar6echo/sample-umd-package -f
 
 See [np](https://www.npmjs.com/package/np) i.e. a "npm publish" convenient package.
 
-
 ## Test
 
 ### Node
@@ -62,7 +61,6 @@ yarn test-browser
 # visit localhost:5000/test/
 # open console
 ```
-
 
 ## Debug
 

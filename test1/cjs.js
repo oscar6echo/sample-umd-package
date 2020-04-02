@@ -1,4 +1,4 @@
-const mod = require('../dist/webpack-numbers');
+const mod = require('../dist1/webpack-numbers');
 
 const { numToWord, wordToNum } = mod;
 

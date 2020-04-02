@@ -1,5 +1,9 @@
 node_modules
 yarn.lock
 yarn-error.log
-dist
+wip
+dist1
+dist2N
+dist2B
+lib2
 
