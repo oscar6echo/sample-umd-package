@@ -58,6 +58,7 @@ yarn test-node
 
 ```bash
 yarn test1-browser
+yarn test1-browser-published # after publish
 yarn test2-browser-dist
 yarn test2-browser-lib
 # visit localhost:5000/
