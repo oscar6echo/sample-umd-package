@@ -57,8 +57,10 @@ yarn test-node
 ### Browser
 
 ```bash
-yarn test-browser
-# visit localhost:5000/test/
+yarn test1-browser
+yarn test2-browser-dist
+yarn test2-browser-lib
+# visit localhost:5000/
 # open console
 ```
 

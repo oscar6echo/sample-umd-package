@@ -10,15 +10,17 @@
   "module": "src/index.js",
   "sideEffects": false,
   "scripts": {
-
     "clean": "rm -rf dist1 && rm -rf dist2N && rm -rf dist2B && rm -rf lib2",
-    "build-dev": "yarn clean && webpack --config webpack.dev.js",
-    "build-prd": "yarn clean && webpack --config webpack.prod.js",
+    "dev": "yarn clean && webpack --config webpack.dev.js",
+    "build": "yarn clean && webpack --config webpack.prod.js",
     "test1-cjs": "node test1/cjs.js",
     "test1-es6": "node -r esm test1/es6.js",
     "test2-cjs": "node test2/cjs.js",
     "test2-es6": "node -r esm test2/es6.js",
-    "test-browser": "npx serve ."
+    "test1-browser": "cp dist1/webpack-numbers.js test1/browser/webpack-numbers.js && cd test1/browser && serve .",
+    "test1-browser-published": "cd test1/browser-published && serve .",
+    "test2-browser-dist": "cp dist2B/my-lib.js test2/browser-dist/my-lib.js && cd test2/browser-dist && serve .",
+    "test2-browser-lib": "cp lib2/*.js test2/browser-lib/ && cd test2/browser-lib && serve ."
   },
   "dependencies": {
     "esm": "^3.2.25",
@@ -37,6 +39,7 @@
     "eslint-plugin-import": "^2.20.1",
     "eslint-plugin-prettier": "^3.1.2",
     "prettier": "^2.0.2",
+    "serve": "^11.3.0",
     "webpack": "^4.42.0",
     "webpack-cli": "^3.3.11",
     "webpack-merge": "^4.2.2"

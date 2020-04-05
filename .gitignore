@@ -6,4 +6,6 @@ dist1
 dist2N
 dist2B
 lib2
+test1/**/*.js
+test2/**/*.js
 
